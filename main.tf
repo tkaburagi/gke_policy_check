@@ -1,4 +1,5 @@
 provider "google" {
+  
 }
 
 resource "google_container_cluster" "primary" {
