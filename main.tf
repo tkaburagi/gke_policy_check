@@ -1,5 +1,7 @@
 provider "google" {
-  
+  credentials = var.gcp_key
+  project     = var.project
+  region      = var.region
 }
 
 resource "google_container_cluster" "primary" {
